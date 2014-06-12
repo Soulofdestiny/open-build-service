@@ -208,6 +208,7 @@ class RequestController < ApplicationController
       end
     end
 
+
     if xml_request
       xml_request.set_attribute('actions', action_counter.to_s)
       render xml: xml_request.dump_xml
